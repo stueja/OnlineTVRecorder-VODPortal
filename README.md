@@ -1,6 +1,9 @@
 # OnlineTVRecorder-VODPortal
 Solution to receive files from onlinetvrecorder.com, process them, display them in a php portal and stream them to e. g. iphone.
 
+![Preview 1](http://imgur.com/Kow4BCY.png)
+![Preview 2](http://imgur.com/2Sv7s5J.png)
+
 Note. The whole thing is badly hacked. And it works.
 
 
