@@ -32,3 +32,54 @@ Note. The whole thing is badly hacked. And it works.
  - incron: http://inotify.aiken.cz/?section=incron&page=doc&lang=en
  - onlinetvrecorder.com: http//www.onlinetvrecorder.com/
 
+
+#### nginx configuration (configure) with nginx-vod-module et. al.:
+```
+#!/bin/bash
+# https://github.com/kaltura/nginx-vod-module
+# without rtmp module: --add-module=/home/jan/nginx-rtmp-module/nginx-rtmp-module-master \
+./configure \
+--prefix=/usr/local/share/nginx-vod \
+--sbin-path=/usr/local/nginx-vod/nginx-vod \
+--conf-path=/usr/local/nginx-vod/nginx-vod.conf \
+--pid-path=/usr/local/nginx-vod/nginx-vod.pid \
+--http-log-path=/var/log/nginx-vod/access.log \
+--error-log-path=/var/log/nginx-vod/error.log \
+--lock-path=/var/lock/nginx-vod.lock \
+--http-client-body-temp-path=/var/lib/nginx-vod/body \
+--http-fastcgi-temp-path=/var/lib/nginx-vod/fastcgi \
+--http-proxy-temp-path=/var/lib/nginx-vod/proxy \
+--user=www-data \
+--group=www-data \
+--http-scgi-temp-path=/var/lib/nginx-vod/scgi \
+--http-uwsgi-temp-path=/var/lib/nginx-vod/uwsgi \
+--with-pcre=../pcre-8.39 \
+--with-pcre-jit \
+--with-zlib=../zlib-1.2.8 \
+--with-http_ssl_module \
+--with-http_stub_status_module \
+--with-http_realip_module \
+--with-http_auth_request_module \
+--with-http_addition_module \
+--with-http_dav_module \
+--with-http_flv_module \
+--with-http_gzip_static_module \
+--with-http_mp4_module \
+--with-http_perl_module \
+--with-http_random_index_module \
+--with-http_secure_link_module \
+--with-http_sub_module \
+--with-mail_ssl_module \
+--with-stream \
+--with-mail \
+--with-http_geoip_module \
+--with-http_image_filter_module \
+--with-http_xslt_module \
+--with-file-aio \
+--with-threads \
+--with-cc-opt="-O3" \
+--with-debug \
+--add-module=../nginx-vod-module-master \
+--add-module=../ngx-more-set-headers
+```
+
