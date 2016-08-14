@@ -4,7 +4,7 @@ Solution to receive files from onlinetvrecorder.com, process them, display them 
 ![Preview 1](http://imgur.com/Kow4BCY.png)
 ![Preview 2](http://imgur.com/2Sv7s5J.png)
 
-Note. The whole thing is badly hacked. And it works.
+Note. The whole thing is badly hacked. And it works, at least for the upload/display/stream parts. Search, login and other features provided by the "My Play" W3 portal are not functional, since I do not need them.
 
 
 ## Components needed:
