@@ -1,0 +1,10 @@
+body {
+	background-color: #ccc;
+	font-family: sans-serif;
+}
+
+table.sortable thead {
+	background-color: #aaa;
+}
+
+

@@ -1,0 +1,1 @@
+/var/www/upload/otr IN_CLOSE_WRITE /usr/local/bin/uploadwatch.sh $#
