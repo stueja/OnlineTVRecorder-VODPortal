@@ -1,3 +1,6 @@
+# Note
+despite being a paying customer on onlinetvrecorder for ~7 years, a case of videos not being sent to me was handled with such unprofessional impudence and in such an unfriendly manner that meanwhile I canceled my "membership" there.
+
 # OnlineTVRecorder-VODPortal
 Solution to receive files from onlinetvrecorder.com, process them, display them in a php portal and stream them to e. g. iphone.
 
